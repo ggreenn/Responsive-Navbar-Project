@@ -1,0 +1,17 @@
+body {
+    font-size: 125%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    background-color: #999999;
+}
+nav a:hover {
+    background-color: #f9f9f9;
+}
