@@ -1,7 +1,7 @@
 body {
     font-size: 125%;
-    background-color: #730D15;
-    color: #F2E4D8;
+    background-color: #0C3C38;
+    color: #D6C2A8;
     font-family: 'Amiri', serif;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -22,15 +22,15 @@ nav#menu a {
     display: block;
     font-weight: normal;
     padding: 0.5em 1em;
-    background-color: #999999;
+    background-color: #FFEAD1;
     color: #101010;
     border: 1px solid #101010;
 }
 nav#menu a:hover {
-    background-color: #f9f9f9;
+    background-color: #FFD6A3;
 }
 a:link {
-    color: #A65132;
+    color: #C6BDFF;
 }
 a:visited {
     color: #D9435F;
