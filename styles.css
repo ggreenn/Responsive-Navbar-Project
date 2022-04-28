@@ -16,6 +16,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
 nav#menu a {
     text-decoration: none;
@@ -37,4 +38,21 @@ a:visited {
 }
 a:hover {
     color:#864026;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* tablet view and up */
+
+@media only screen and (min-width: 530px) {
+    nav ul {
+        flex-direction: row;
+    }
 }
