@@ -11,6 +11,7 @@ header, main, footer {
     max-width: 98%;
     margin: 2em auto;
 }
+/* style the navbar */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -19,6 +20,7 @@ nav ul {
     flex-direction: column;
     height: 0;
     opacity: 0;
+    transition: all 0.4s ease-in;
 }
 nav ul.open {
     opacity: 1;
@@ -55,10 +57,33 @@ a:hover {
   'opsz' 48
 }
 
+/* navbar toggle */
+menu-toggle {
+    width: 2em;
+    height: 2emborder-radius: 2em;
+    transition: all 0.3s;
+}
+#menu-toggle:hover {
+    background-color: #99999973;
+}
+menu-toggle div {
+    width: 50%;
+    height: 3px;
+    background-color: #101010;
+    margin: 4px auto; 
+    transform: translateY(12);
+}
+
 /* tablet view and up */
 
 @media only screen and (min-width: 530px) {
     nav ul {
         flex-direction: row;
+    }
+    menu-toggle {
+        opacity: 0;
+        height: 0;
+        width: 0;
+
     }
 }
