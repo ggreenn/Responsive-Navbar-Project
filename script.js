@@ -1,3 +1,5 @@
+var mobileBreakpoint = 600;
+
 /* When the page loads, add an open class to nav if the screen is wide enough. */
 
 window.onload = function() {
