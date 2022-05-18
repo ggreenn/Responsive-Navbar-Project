@@ -15,17 +15,42 @@ header, main, footer {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     height: 0;
     opacity: 0;
-    transition: all 0.4s ease-in;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+
+/* check for nav ul and nav open ul to see why my nav bar is GONE Noted: 5/16 */ 
+
+    /* If I want to transform my animations instead of using transition, delete the comment forms and use comment for transition instead- but i like transition better
+    transform: 
+    */
+
+   /* transition: all 0.4s ease-in;*/
 }
-nav ul.open {
+nav.open ul {
     opacity: 1;
     height: auto;
+    transform:translateX(0);
 }
+nav a:link {
+    text-decoration:none;
+    display: block;
+    font-weight: 700;
+    /* what does this one even do?
+    padding: 0.2em, 0.5em;
+    */
+    color:#101010;
+    border: 0.5px solid black;
+}
+nav a:hover {
+    background-color: #FFD6A3;
+}
+/* what does this one do and why don't i see any changes
+
 nav#menu a {
     text-decoration: none;
     display: block;
@@ -35,9 +60,8 @@ nav#menu a {
     color: #101010;
     border: 1px solid #101010;
 }
-nav#menu a:hover {
-    background-color: #FFD6A3;
-}
+*/
+
 a:link {
     color: #C6BDFF;
 }
@@ -58,20 +82,37 @@ a:hover {
 }
 
 /* navbar toggle */
-menu-toggle {
+#menu-toggle {
     width: 2em;
-    height: 2emborder-radius: 2em;
+    height: 2em;
+    border-radius: 2em;
     transition: all 0.3s;
 }
 #menu-toggle:hover {
     background-color: #99999973;
 }
-menu-toggle div {
+#menu-toggle div {
     width: 50%;
     height: 3px;
-    background-color: #101010;
+    background-color: #FFD6A3;
     margin: 4px auto; 
-    transform: translateY(12);
+    transform: translateY(12px);
+}
+/* I changed the values of opacity of div.two.
+   I also changed the transition value of translation Y of div three to 1em instead of the original given value of -0.5 in class */
+
+   /* If the opacit of div two is 1, it is equal to opacity 100%, if 0.5, it is 50% and vice versa */
+
+   /*Maybe divs are the dividers of the black lines? */
+
+#menu-toggle.open div.one {
+    transition: translateY(1em);
+}
+#menu-toggle.open div.two {
+    opacity: 1;
+}
+#menu-toggle.open div.three {
+    transition: translateY(1em);
 }
 
 /* tablet view and up */
@@ -79,8 +120,14 @@ menu-toggle div {
 @media only screen and (min-width: 530px) {
     nav ul {
         flex-direction: row;
+        transform: translateX(0);
+        opacity: 1;
+        height: auto;
+        width: auto;
+
     }
-    menu-toggle {
+    /* does "menu-toggle" need a #? because the three lines for the menu bar disapears when there is a hashtag */
+    #menu-toggle {
         opacity: 0;
         height: 0;
         width: 0;
