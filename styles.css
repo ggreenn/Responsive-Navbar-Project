@@ -47,7 +47,7 @@ nav a:link {
     border: 0.5px solid black;
 }
 nav a:hover {
-    background-color: #FFD6A3;
+    background-color: #212121;
 }
 /* what does this one do and why don't i see any changes
 
@@ -66,10 +66,10 @@ a:link {
     color: #C6BDFF;
 }
 a:visited {
-    color: #D9435F;
+    color: #ffffff;
 }
 a:hover {
-    color:#864026;
+    color:#b1a4ff;
 }
 
 
