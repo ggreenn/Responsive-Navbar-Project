@@ -45,6 +45,7 @@ nav a:link {
     */
     color:#101010;
     border: 0.5px solid black;
+    padding: .5em 1em;
 }
 nav a:hover {
     background-color: #212121;
