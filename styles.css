@@ -33,6 +33,16 @@ a:link {
     color: #C6BDFF;
 }
 a:visited {
+    color: #ffffff;
+}
+a:hover {
+    color:#b1a4ff;
+}
+/*
+a:link {
+    color: #C6BDFF;
+}
+a:visited {
     color: #D9435F;
 }
 a:hover {
